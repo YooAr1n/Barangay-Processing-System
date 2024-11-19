@@ -125,6 +125,10 @@
     text-align: left;
     color: white;
   }
+
+  span.req {
+    color: red;
+  }
   
   input, select {
     padding: 10px;
