@@ -80,6 +80,7 @@ body {
 }
 
 .login-btn:hover {
+  color: #7695eb;
   background-color: #130142;
 }
 
@@ -122,6 +123,7 @@ body {
 }
 
 .btn-primary:hover {
+  color: #7695eb;
   background-color: #130142;
 }
 
@@ -182,6 +184,7 @@ a{
 }
 
 .card button:hover {
+  color: #7695eb;
   background-color: #130142;
 }
 
