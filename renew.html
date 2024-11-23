@@ -56,16 +56,43 @@
 
   <script>
     function loadUserDetails() {
-      const userData = {
+      const userData = [{
         name: "Juan Dela Cruz",
         address: "123 Barangay St.",
         contact: "09123456789",
         permitType: "business-permit",
-      };
-      document.getElementById('name').value = userData.name;
-      document.getElementById('address').value = userData.address;
-      document.getElementById('contact').value = userData.contact;
-      document.getElementById('permit-type').value = userData.permitType;
+      },
+      {
+        name: "YooA",
+        address: "1995 Barangay YooA.",
+        contact: "09917199529",
+        permitType: "barangay-clearance",
+      },
+      {
+        name: "Arin",
+        address: "1999 Barangay Arin.",
+        contact: "09618199925",
+        permitType: "building-permit",
+      }
+      ];
+      if (document.getElementById('ref-number').value == "0") {
+        document.getElementById('name').value = userData[0].name;
+        document.getElementById('address').value = userData[0].address;
+        document.getElementById('contact').value = userData[0].contact;
+        document.getElementById('permit-type').value = userData[0].permitType;
+      }
+      else if (document.getElementById('ref-number').value == "1") {
+        document.getElementById('name').value = userData[1].name;
+        document.getElementById('address').value = userData[1].address;
+        document.getElementById('contact').value = userData[1].contact;
+        document.getElementById('permit-type').value = userData[1].permitType;
+      }
+      else {
+        document.getElementById('name').value = userData[2].name;
+        document.getElementById('address').value = userData[2].address;
+        document.getElementById('contact').value = userData[2].contact;
+        document.getElementById('permit-type').value = userData[2].permitType;
+      }
     }
   </script>
 
